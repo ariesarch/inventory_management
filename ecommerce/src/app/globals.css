@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --shades-0: #ffffff;
+    --shades-100: #050505;
+
+    --neutral-50: #f4f4f4;
+    --neutral-100: #f4f4f6;
+    --neutral-200: #c9ccd5;
+    --neutral-300: #8d8f92;
+    --neutral-400: #484a4e;
+    --neutral-500: #1b2026;
+
+    --success-100: #e7f6eb;
+    --success-200: #9fdbae;
+    --success-300: #55c375;
+    --success-400: #28a853;
+    --success-500: #10843c;
+
+    --info-100: #e5ebff;
+    --info-200: #a4c1fb;
+    --info-300: #3661ec;
+    --info-400: #1053f3;
+    --info-500: #0e2b9b;
+
+    --warning-100: #fffbdf;
+    --warning-200: #f8e867;
+    --warning-300: #f4dd14;
+    --warning-400: #f3b407;
+    --warning-500: #ee7100;
+
+    --error-100: #ffecef;
+    --error-200: #f69c9e;
+    --error-300: #fb5355;
+    --error-400: #f2373b;
+    --error-500: #d3242c;
+  }
+}
+
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.nav-container {
+  @apply flex flex-col xl:flex-row items-center justify-between;
+}
+
+.headline-1 {
+  @apply text-5xl leading-[72px];
+}
+
+.headline-2 {
+  @apply text-[40px] leading-[60px];
+}
+
+.headline-3 {
+  @apply text-[36px] leading-[60px];
+}
+
+.headline-4 {
+  @apply text-[32px] leading-[50px];
+}
+
+.headline-5 {
+  @apply text-[28px] leading-[40px];
+}
+.custom-shadow {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
